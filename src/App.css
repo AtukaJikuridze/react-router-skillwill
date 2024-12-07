@@ -1,6 +1,91 @@
-.books-main {
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+.todo-main {
+  background-color: #242424;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
+}
+.todo-main form {
+  display: flex;
+  justify-content: center;
+}
+.todo-main form input[type=text] {
+  width: 300px;
+  margin: 30px auto;
+  height: 40px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border: 0px;
+  outline: none;
+  padding: 4px;
+}
+.todo-main form input[type=submit] {
+  width: 100px;
+  margin: 30px auto;
+  height: 40px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border: 0px;
+  outline: none;
+  padding: 4px;
+  cursor: pointer;
+}
+.todo-main .todo-flex {
+  justify-content: center;
+  align-items: center;
   display: flex;
   gap: 20px;
-  flex-wrap: wrap;
-  justify-content: center;
+}
+.todo-main div.list {
+  width: 30%;
+  background-color: #fff;
+  height: 600px;
+  border-radius: 20px;
+  overflow-y: scroll;
+}
+.todo-main div.list h1 {
+  text-align: center;
+  padding: 20px 0px;
+}
+.todo-main .unfinished-flex {
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+  background-color: rgb(247, 247, 247);
+  gap: 10px;
+}
+.todo-main .unfinished-flex h2 {
+  max-width: 80%;
+  word-break: break-all;
+}
+.todo-main .unfinished-flex .finish-task {
+  height: 30px;
+  cursor: pointer;
+  width: 20%;
+}
+.todo-main .finished-flex {
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.todo-main .finished-flex h2 {
+  max-width: 80%;
+  word-break: break-all;
+}
+.todo-main .finished-flex .finished-buttons {
+  display: flex;
+  gap: 8px;
+}
+.todo-main .finished-flex .finished-buttons button {
+  cursor: pointer;
+  padding: 5px;
 }/*# sourceMappingURL=App.css.map */
