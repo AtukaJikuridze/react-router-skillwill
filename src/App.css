@@ -1,31 +1,64 @@
 * {
-  margin: 0px;
   padding: 0px;
+  margin: 0px;
   box-sizing: border-box;
 }
 
-.App {
-  height: 100vh;
-  padding: 50px 0px;
+nav {
+  background-color: #242424;
+  padding: 20px;
+}
+nav ul {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+nav ul li {
+  list-style-type: none;
+}
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
 }
 
-button {
+main .main-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 0px;
+  gap: 20px;
+}
+main .main-info img {
+  width: 400px;
+}
+
+.about-main .about-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 400px;
   margin: auto;
-  width: 300px;
-  height: 50px;
-  border-radius: 10px;
-  border: 1px solid black;
-  display: block;
-  outline: none;
+  padding: 50px 0px;
+  gap: 20px;
+}
+
+.fact-main {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 50px 0px;
+  gap: 50px;
+}
+.fact-main .inputs button {
+  width: 230px;
+  padding: 10px 0px;
   cursor: pointer;
 }
 
-.whiteMODE {
-  background-color: white;
-  transition: 0.2s;
-}
-
-.blackMODE {
-  background-color: black;
-  transition: 0.2s;
+.incorrect {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  padding: 50px 0px;
 }/*# sourceMappingURL=App.css.map */
